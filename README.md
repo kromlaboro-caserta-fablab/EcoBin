@@ -3,6 +3,10 @@ Automated garbage can with Arduino and 3D printing.
 
 Progetto sviluppato per: <a href= "https://www.convittogiordanobruno.edu.it/">Convitto Nazionale Giordano Bruno - Maddaloni (Ce) </a>
 
+<img src="309443691_467074668780444_8959978343518927595_n.jpg" alt="Image" style="width:200px;">
+
+
+
 Licenza Progetto: <a href= "https://github.com/kromlaboro-caserta-fablab/EcoBin/blob/b58ac2ec3b1155eefaae648031c3f0876af7aa45/license%20CC-BY-SA-4.0"> <b>CC-BY-SA-4.0 Attribution-ShareAlike 4.0 International </a>
 
 
