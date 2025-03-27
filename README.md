@@ -22,6 +22,59 @@ In questo circuito è presente il sensore di Distanza ad Ultrasuoni a 3PIN anzic
 ![immagine](https://github.com/user-attachments/assets/1c1a7de3-b3e6-41f0-9e85-ba235ef4340b)
 
 In questo repository è presente il file Arduino di questo progetto:
+https://github.com/kromlaboro-caserta-fablab/EcoBin/blob/f6444a3bfa870dd5421165e39c96db20ecbf079f/Codice-eco_bin1.ino
+
+Questo il Codice:
+
+<code> 
+
+// C++ code
+//
+#include <Servo.h>
+
+int ultras = 0;
+
+int i = 0;
+
+int j = 0;
+
+long readUltrasonicDistance(int triggerPin, int echoPin)
+{
+  pinMode(triggerPin, OUTPUT);  // Clear the trigger
+  digitalWrite(triggerPin, LOW);
+  delayMicroseconds(2);
+  // Sets the trigger pin to HIGH state for 10 microseconds
+  digitalWrite(triggerPin, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(triggerPin, LOW);
+  pinMode(echoPin, INPUT);
+  // Reads the echo pin, and returns the sound wave travel time in microseconds
+  return pulseIn(echoPin, HIGH);
+}
+
+Servo servo_3;
+
+void setup()
+{
+  pinMode(LED_BUILTIN, OUTPUT);
+  servo_3.attach(3, 500, 2500);
+}
+
+void loop()
+{
+  digitalWrite(LED_BUILTIN, HIGH);
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(LED_BUILTIN, LOW);
+  delay(1000); // Wait for 1000 millisecond(s)
+  if (0.01723 * readUltrasonicDistance(9, 10) <= 15) {
+    servo_3.write(-90);
+  } else {
+    servo_3.write(90);
+  }
+}
+
+</code>
+
 
 
 
