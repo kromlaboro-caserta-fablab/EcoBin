@@ -21,5 +21,9 @@ https://www.tinkercad.com/things/cWEtUcsoJDk-eco-bin
 In questo circuito è presente il sensore di Distanza ad Ultrasuoni a 3PIN anzichè Il sensore ad ultrasuoni HCSR04 con 4 PIN. Il funzionamento è analogo.
 ![immagine](https://github.com/user-attachments/assets/1c1a7de3-b3e6-41f0-9e85-ba235ef4340b)
 
+In questo repository è presente il file Arduino di questo progetto:
+
+
+
 
 
